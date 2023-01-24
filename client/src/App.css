@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** mein own css **/
+
+/** Side Menu **/
+.sideMenu {
+  width: 260px;
+  background-color: #202123;
+  padding: 10px;
+}
+
+.sideMenu-button, .models select {
+  padding: 15px;
+  border: 1px solid hsla(0,0%,100%,.5);
+  border-radius: 5px;
+  text-align-last: left;
+  transform: ease 0.25s all;
+  cursor: pointer;
+}
+
+.sideMenu-button:hover, .models select:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sideMenu-button span {
+  padding-left: 6px;
+  padding-right: 12px;
+}
+
+.models {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.models label {
+  text-align: left;
+}
+
+.models select {
+  background-color: transparent;
+  color: white;
+  margin: 5px 0 15px 0;
+}
+
+select option {
+  color: black;
+}
+
+.modelInfo {
+  text-align: left;
+  font-size: small;
+}
+
+/** Section Style */
+.chatBox {
+  flex: 1;
+  background-color: #343541;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.chatLog {
+  text-align: justify;
+}
+
+.chatMessage.chatbot {
+  background-color: #444654;
+}
+
+.chatMessage-center {
+  display: flex;
+  max-width: 640px;
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar {
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.avatar.chatbot {
+  background: #0da37f;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.avatar img {
+  width: 52px;
+  height: 52px;
+  margin-left: 3px;
+  margin-top: 5px;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.chatInput-holder {
+  padding: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.chatInput-textarea {
+  background-color: #40414f;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1.25em;
+}
