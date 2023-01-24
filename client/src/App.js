@@ -24,7 +24,7 @@ function App() {
   }
 
   function getEngines(){
-    fetch("https://botcode-b3v4.onrender.com/models")
+    fetch("https://d-bot.onrender.com/models")
     .then(res => res.json())
     .then(data => setModels(data.models));
   }
@@ -41,7 +41,7 @@ function App() {
      */
     const messages = chatLogNew.map((message) => message.message).join("\n");
 
-    const response = await fetch("https://botcode-b3v4.onrender.com", {
+    const response = await fetch("https://d-bot.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
