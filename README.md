@@ -6,7 +6,7 @@
 
 D-bot is clone app of ChatGPT with the possibilities to choose an AI Model to discuss with the bot.
 The application was made with:
-* Reatc js
+* React js
 * open AI
 * Normalize.css
 
